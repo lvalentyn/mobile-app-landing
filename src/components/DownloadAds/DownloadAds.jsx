@@ -6,8 +6,8 @@ const DownloadAds = () => {
 
 	return (
 		<div className="download">
-			<div className="download_images flex">
-				<a className={`${downloadImageStyle} mr-[2rem]`} href="#">
+			<div className="download_images flex flex-col md:flex-row">
+				<a className={`${downloadImageStyle} mb-[2rem] md:mb-[0rem] md:mr-[2rem]`} href="#">
 					<img src={images.appStore} alt="appStore" />
 				</a>
 				<a className={downloadImageStyle} href="#">

@@ -33,9 +33,9 @@ const Search = () => {
 	};
 
 	return (
-		<div className="search relative h-[65rem] px-[5rem] bg-[#081730] pt-[18rem] pb-[10rem] mt-[-15rem] z-[3] flex items-center justify-between rounded-b-[5rem]">
-			<div className="left flex-1">
-				<motion.img className="absolute top-[22rem] left-[-47rem]"
+		<div className="search relative h-[65rem] px-[2rem] lg:px-[5rem] bg-[#081730] pt-[18rem] pb-[10rem] mt-[-15rem] z-[3] flex items-center justify-between rounded-b-[5rem] overflow-hidden">
+			<div className="left flex-1 hidden md:block">
+				<motion.img className="absolute top-[22rem] left-[-47rem] "
 					variants={bg}
 					animate={`${elementIsVisible}`}
 					transition={{

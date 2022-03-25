@@ -25,10 +25,10 @@ const Hero = () => {
 	};
 	const rect = {
 		true: {
-			left: "11rem",
+			left: "12rem",
 		},
 		false: {
-			left: "13rem",
+			left: "13.5rem",
 		},
 	}
 	const heart = {
@@ -45,7 +45,7 @@ const Hero = () => {
 			onChange={(isVisible) => setElementIsVisible(isVisible)}
 			minTopValue={300}
 		>
-			<div className="hero bg-[#081730] flex items items-center justify-between px-[5rem] rounded-b-[5rem] w-[100%] h-[35rem] relative z-[5]">
+			<div className="hero bg-[#081730] flex items items-center justify-between px-[2rem] lg:px-[5rem] py-[6rem] md:py-[0rem] h-[auto] md:h-[36rem] rounded-b-[5rem] w-[100%] relative z-[5]">
 				<div className="headings flex flex-col items-start justify-center h-[100%] text-[3rem]">
 					<span>Experience The</span> <span><b>Best Quality Music</b></span>
 					<span className="text-[15px] text-[#525D6E]">
@@ -57,8 +57,8 @@ const Hero = () => {
 						<DownloadAds />
 					</div>
 				</div>
-				<div className="images relative w-[50%]">
-					<motion.img className=" absolute top-[-8rem] left-[19rem]"
+				<div className="images relative w-[50%] h-[100%] hidden md:block">
+					<motion.img className=" absolute bottom-[5rem] left-[19rem] mh-[100%]"
 						variants={bg}
 						animate={`${elementIsVisible}`}
 						transition={{
@@ -71,10 +71,10 @@ const Hero = () => {
 					<img
 						src={images.p1}
 						alt=""
-						className="absolute top-[-15rem] h-[34rem] left-[13rem]"
+						className="absolute bottom-[-1rem] h-[34rem] left-[13rem]"
 					/>
 
-					<motion.img className="absolute left-[235px] top-[94px] w-[175px]"
+					<motion.img className="absolute left-[235px] bottom-[85px] w-[175px]"
 						variants={musicPlayer}
 						animate={`${elementIsVisible}`}
 						transition={{
@@ -82,7 +82,7 @@ const Hero = () => {
 							type: "ease-out",
 						}}
 						src={images.p2} alt="p2" />
-					<motion.img className=" absolute top-[12rem] left-[13rem] w-[5rem]"
+					<motion.img className=" absolute bottom-[1.5rem] left-[13.5rem] w-[5rem]"
 						variants={rect}
 						animate={`${elementIsVisible}`}
 						transition={{

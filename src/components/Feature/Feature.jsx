@@ -18,7 +18,7 @@ const Feature = ({ icon, title }) => {
 	return (
 		<VisibilitySensor
 			onChange={(isVisible) => setElementIsVisible(isVisible)}>
-			< div className="feature flex items-center justify-center flex-col relative text-center mx-12" >
+			< div className="feature flex items-center justify-center flex-col relative text-center mx-12 mb-[6rem] md:mb-[0rem]" >
 				<motion.div className="icon bg-[#081730] rounded-2xl p-4"
 					variants={variant}
 					transition={{
