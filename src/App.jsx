@@ -1,4 +1,4 @@
-import { Header, Hero } from "./components";
+import { Header, Hero, Experience, Search, Download, Footer } from "./components";
 
 import "./App.scss";
 
@@ -7,6 +7,10 @@ const App = () => {
 		<div className="App text-white overflow-hidden">
 			<Header />
 			<Hero />
+			<Experience />
+			<Search />
+			<Download />
+			<Footer />
 		</div>
 	);
 }
