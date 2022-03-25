@@ -1,4 +1,5 @@
 import DownloadAds from '../DownloadAds/DownloadAds'
+import { images } from '../../constants'
 
 const Hero = () => {
 	return (
@@ -14,7 +15,13 @@ const Hero = () => {
 					<DownloadAds />
 				</div>
 			</div>
-			<div className="images">Images</div>
+			<div className="images relative w-[50%]">
+				<img className=" absolute top-[-8rem] left-[19rem]" src={images.backgraphics} alt="backgraphics" />
+				<img className=" absolute top-[-15rem] left-[13rem] h-[34rem]" src={images.p1} alt="p1" />
+				<img className=" absolute top-[94rem] left-[235rem] w-[175rem]" src={images.p2} alt="p2" />
+				<img className=" absolute top-[12rem] left-[13rem] w-[5rem]" src={images.p3} alt="p3" />
+				<img className=" absolute top-[-12rem] left-[12.5rem] w-[5rem]" src={images.p4} alt="p4" />
+			</div>
 		</div>
 	)
 }
